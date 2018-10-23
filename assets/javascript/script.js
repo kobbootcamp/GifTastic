@@ -58,7 +58,7 @@ function displayAnimalGiphy() {
  // alert($(this).attr("data-name"));
 
  var thisAnimal = $(this).attr("data-name");
- var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + thisAnimal + "&limit=10&api_key=fEpDmXunynP0VfXAgS71u6dxFuRorLmd";
+ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + thisAnimal + "&limit=10&api_key=fEpDmXunynP0VfXAgS71u6dxFuRorLmd";
 
  $.ajax({url: queryURL, method: "GET"})
  .done(function(response) {
