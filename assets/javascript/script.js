@@ -65,7 +65,9 @@ function displayAnimalGiphy() {
      // console.log(response.data[0].rating);
      console.log(response);
 
-     for (i=0;i<10;i++) {
+     var results=response.data;
+
+     for (i=0;i<results.length;i++) {
   
      var animalDiv = $("<div class='animal'>")
 
